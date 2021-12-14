@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exos1</title>
+</head>
+
+<body>
+
+    <h1>affichage des exercices</h1>
+
+    <h2>Boucles</h2>
+
+    <p>exo: 1</p>
+
+    <script language="javascript" type="text/javascript">
+        for (let i = 0; i < 11; i++) {
+            document.write(i, ",");
+        }
+    </script>
+
+    <p>exo: 2</p>
+
+    <script language="javascript" type="text/javascript">
+        let var2 = 5;
+        for (let var1 = 0; var1 <= 20; var1++) {
+            document.write(var1 * var2, ",");
+        }
+    </script>
+
+    <p>exo: 3</p>
+
+    <script language="javascript" type="text/javascript">
+        let var3 = 5;
+        for (let var4 = 100; var4 >= 11; var4--) {
+            document.write(var3 * var4, ",");
+        }
+    </script>
+
+    <p>exo: 4</p>
+
+    <script language="javascript" type="text/javascript">
+        let toto = 1;
+        while (toto <= 10) {
+            toto += (toto / 2);
+            document.write(toto, ",");
+        }
+    </script>
+
+    <p>exo: 5</p>
+
+    <script language="javascript" type="text/javascript">
+        for (let j = 1; j <= 15; j++) {
+            document.write("on y arrive presque<br />");
+        }
+    </script>
+
+    <p>exo: 6</p>
+
+    <script language="javascript" type="text/javascript">
+        for (let z = 20; z >= 0; z--) {
+            document.write("c\'est presque bon<br />");
+        }
+    </script>
+
+    <p>exo: 7 & 8</p>
+
+    <script language="javascript" type="text/javascript">
+    let w = 1;
+    while (w<100) {
+    w += 15;
+    document.write("on tient le bon bout");
+        }
+    </script>
+
+    <script language="javascript" type="text/javascript">
+    let o = 200;
+    while (o >= 0) {
+    o -= 12;
+    document.write("enfin!");
+        }
+    </script>
+
+    <h2>Fonctions</h2>
+
+    <p>exo: 1</p>
+
+    <script language="javascript" type="text/javascript">
+    function dede(boolean) {
+    return true;
+}
+    document.write(dede(false));
+    </script>
+
+    <p>exo: 2</p>
+
+    <script language="javascript" type="text/javascript">
+    function meme(string) {
+    return string;
+}
+    document.write(meme("Salut man"));
+    </script>
+
+    <p>exo: 3</p>
+
+    <script language="javascript" type="text/javascript">
+
+    function concat(chaine1, chaine2) {
+    document.write(chaine1+' '+chaine2);
+}
+    concat('I','am');
+    </script>
+
+    <p>exo: 4</p>
+
+    <script language="javascript" type="text/javascript">
+
+        function plusmoins(nombre1,nombre2) {
+            if (nombre1 == nombre2) {
+        document.write('ces nombres sont égaux');
+            } else if (nombre1 <= nombre2) {
+        document.write('le premier nombre est inférieur');
+            } else {
+        document.write('le premier nombre est supérieur');
+    }
+
+}
+    plusmoins(5,3);
+
+    </script>
+
+    <p>exo: 5</p>
+
+    <script language="javascript" type="text/javascript">
+
+    function concatNombre(str,int) {
+    document.write(str+int);
+}
+    concatNombre('I am ', 21);
+
+    </script>
+
+    <p>exo: 6</p>
+
+    <script language="javascript" type="text/javascript">
+    function concat3(str1,str2,age) {
+    document.write('bonjour '+str1+' '+str2+' tu as '+age+' ans.');
+}
+    concat3('jordan','mickeal',55);
+
+    </script>
+
+    <p>exo: 7</p>
+
+    <script language="javascript" type="text/javascript">
+    function affichage(genre,age) {
+        if (genre == 'homme') {
+            if (age>18) {
+                document.write('je suis un homme majeur');
+            } else {
+                document.write('je suis un homme mineur');
+            } 
+        }
+
+        if (genre=='femme') {
+            if (age>18) {
+                document.write('je suis une femme majeure');
+            } else {
+                document.write('je suis une femme mineure');
+            }
+        }
+    }
+
+        affichage('homme',1);
+        affichage('homme',45);
+        affichage('femme',2);
+        affichage('femme',70);
+
+        </script>
+
+    <p>exo: 7</p>
+
+    <script language="javascript" type="text/javascript">
+    function triple(int1,int2,int3) {
+    return int1+int2+int3;
+}
+    document.write(triple(5,4,3));
+
+    </script>
+
+    <h2>Tableaux</h2>
+
+    <p>exo: 2</p>
+
+    <script language="javascript" type="text/javascript">
+
+    var mois = ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
+    document.write(mois[2]);
+    document.write(mois[5]);
+    var coco = mois[7].replace('aout','août');
+    document.write(coco);
+    var departement = { 02: 'Aisne' ,59: 'Nord' , 60: 'Oise' , 62: 'Pas-de-Calais', 80: 'Somme' };
+    document.write(departement[59]);
+    departement.push()
+    </script>
+
+</body>
+
+</html>

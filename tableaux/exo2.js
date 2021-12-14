@@ -1,0 +1,1 @@
+document.write(mois[2]);
